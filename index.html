@@ -2,13 +2,28 @@
 <html>
 <head>
 	<title>GLS Fullstack Exercise</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="introjs.css" rel="stylesheet">
+	<script type="text/javascript" src="intro.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<style type="text/css">
-.myClass1 {padding: 10px 20px;border: 1px solid green;margin-bottom: 50px;}
+		.myClass1 {padding: 10px 20px;border: 1px solid green;margin-bottom: 50px;}
 
-.myClass2 {padding: 50px;border: 1px solid red;display: inline-block;position: absolute;right: 0px;}
+		.myClass2 {padding: 50px;border: 1px solid red;display: inline-block;position: absolute;right: 0px;}
 
-.myClass3 {padding: 50px;border: 1px solid blue;display: inline-block;position: absolute;left: 0px; bottom: 0px;}		
+		.myClass3 {padding: 50px;border: 1px solid blue;display: inline-block;position: absolute;left: 0px; bottom: 0px;}		
+	
+		.jumbotron { max-width: 700px; margin: 0 auto; }
 	</style>
+	<script>
+		function startTour() {
+			var tour = introJs()
+			tour.setOption('tooltipPosition', 'auto');
+			tour.setOption('positionPrecedence', ['left', 'right', 'top', 'bottom']);
+			tour.start();
+		}
+	
+	</script>
 </head>
 <body>
 	<h1>GLS Fullstack Exercise</h1>
